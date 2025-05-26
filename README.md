@@ -6,13 +6,14 @@ Basic info version may 2025
 
 Arduino to Max module (main Max patch, source and arduino code)
 
-(baudrate is set to 115200) If you have connection problems while using multiple IO try changing arduino code IO)
+(baudrate is set to 9600) If you have connection problems while using multiple IO try changing arduino code IO)
 Sensor readout is set to 50ms (if you need faster readout send a message <pollspeed 20> to the serial to change the speed)
 
 On the topside of the module you have data inlets to write to Arduino
 On the bottom there data outlets. Here we read from the arduino (use the ON buttons to enable individual ports)
 
-!!!!!!!!!!!!!!!!FIRST: Upload the Arduino_Max_Module_V2025.ino sketch to your arduino IT WILL NOT REALLY WORK WITH OTHER ARDUINO CODE!!!!!!!!!
+!!!!!!!!!!!!!!!!FIRST: Upload the ArduinoCode_ArduinoModule_V2025.ino sketch to your arduino.
+IT WILL NOT REALLY WORK WITH OTHER ARDUINO CODE!!!!!!!!!
 
 1. Press the 'SYSTEM ON / OFF' in module. If no connection is established the menu on the right will say "no arduino connected". A good connection will show you the serial port your arduino is connected to.
 
