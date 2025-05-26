@@ -34,7 +34,7 @@ unsigned long lastPoll = 0;
 unsigned long pollInterval = 50;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   for (int i = 0; i < 12; i++) {
     pinMode(digitalPins[i], INPUT); // Change to INPUT_PULLUP if you dont want to use resitors everywhere
@@ -73,7 +73,7 @@ void checkAndSendChanges() {
     }
     if (changed) sendDigital();
   }
-
+// here we apply a little filter. When analogRead is > x then changend is true and send to serial
   changed = false;
   if (readMode == "a" || readMode == "b") {
     for (int i = 0; i < 6; i++) {

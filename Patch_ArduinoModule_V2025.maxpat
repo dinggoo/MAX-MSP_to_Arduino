@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2204.0, 191.0, 820.0, 846.0 ],
+		"rect" : [ 2187.0, 102.0, 788.0, 690.0 ],
 		"gridonopen" : 2,
 		"gridsize" : [ 15.0, 15.0 ],
 		"subpatcher_template" : "Default Max 7",
@@ -22,7 +22,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 651.0, 58.5, 24.0, 24.0 ]
+					"patching_rect" : [ 654.0, 17.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -35,7 +35,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 458.0, 45.0, 174.0, 51.0 ],
+					"patching_rect" : [ 461.0, 4.0, 174.0, 51.0 ],
 					"text" : "Use this toggle to see if the onboard led on pin 13 is working"
 				}
 
@@ -47,8 +47,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 387.0, 664.0, 275.0 ],
-					"text" : "Version may 2025\n\nArduino to Max module (main Max patch, source and arduino code)\n\n(baudrate is set to 115200) If you have connection problems while using multiple IO try changing arduino code IO)\nSensor readout is set to 50ms\n\nOn the topside of the module you have data inlets to write to Arduino\nOn the bottom there data outlets. Here we read from the arduino (use the ON buttons to enable individual ports)\n\n!!!!!!!!!!!!!!!!FIRST: Upload the ArduinoSketchforMaxModule.ino sketch to your arduino IT WILL NOT REALLY WORK WITH OTHER ARDUINO CODE!!!!!!!!!\n\n1. Press the 'SYSTEM ON / OFF' in module. If no connection is established the menu on the right will say \"no arduino connected\". A good connection will show you the serial port your arduino is connected to.\n\n2. Enable analog and / or digtal READOUT and then individual pins (keep this OFF if you are only writing to arduino)\n\n3. You can switch the function of data inlets 3, 5, 6, 9 ,10 & 11 on the topside of the module to be digital, analog or servo mode (default = digital. (Note: you can connect multiple servo motors but HAVE TO USE A EXTERNAL POWERSOURCE"
+					"patching_rect" : [ 26.0, 346.0, 664.0, 275.0 ],
+					"text" : "Version may 2025\n\nArduino to Max module (main Max patch, source and arduino code)\n\n(baudrate is set to 9600) If you have connection problems while using multiple IO try changing arduino code IO)\nSensor readout is set to 50ms\n\nOn the topside of the module you have data inlets to write to Arduino\nOn the bottom there data outlets. Here we read from the arduino (use the ON buttons to enable individual ports)\n\n!!!!!!!!!!!!!!!!FIRST: Upload the ArduinoCode_ArduinoModule_V2025.ino sketch to your arduino IT WILL NOT REALLY WORK WITH OTHER ARDUINO CODE!!!!!!!!!\n\n1. Press the 'SYSTEM ON / OFF' in module. If no connection is established the menu on the right will say \"no arduino connected\". A good connection will show you the serial port your arduino is connected to.\n\n2. Enable analog and / or digtal READOUTS and then individual pins (keep this OFF if you are only writing to arduino)\n\n3. You can switch the function of data inlets 3, 5, 6, 9 ,10 & 11 on the topside of the module to be digital, analog or servo mode (default = digital. (Note: you can connect multiple servo motors but HAVE TO USE A EXTERNAL POWERSOURCE"
 				}
 
 			}
@@ -80,7 +80,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2325.0, 281.0, 922.0, 633.0 ],
+						"rect" : [ 2416.0, 230.0, 779.0, 509.0 ],
 						"openinpresentation" : 1,
 						"gridonopen" : 2,
 						"gridsize" : [ 15.0, 15.0 ],
@@ -183,7 +183,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 292.88629150390625, 390.0, 50.0, 22.0 ],
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -731,7 +731,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-28",
-									"int" : 2,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 3,
@@ -962,7 +961,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 517.0, 233.0, 430.0, 422.0 ],
+										"rect" : [ 2541.0, 331.0, 528.0, 448.0 ],
 										"gridsize" : [ 15.0, 15.0 ],
 										"boxes" : [ 											{
 												"box" : 												{
@@ -1179,7 +1178,7 @@
 														"toolbaradditions" : [ "BEAP", "Vizzie" ]
 													}
 ,
-													"patching_rect" : [ 91.0, 286.0, 61.0, 22.0 ],
+													"patching_rect" : [ 91.0, 263.0, 61.0, 22.0 ],
 													"text" : "p fromArd"
 												}
 
@@ -2363,8 +2362,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "int", "" ],
-													"patching_rect" : [ 91.0, 209.5, 315.0, 29.0 ],
-													"text" : "serial # 115200 @autoopen 0 @dtr 1"
+													"patching_rect" : [ 91.0, 209.5, 296.0, 29.0 ],
+													"text" : "serial # 9600 @autoopen 0 @dtr 1"
 												}
 
 											}
@@ -2415,7 +2414,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 91.0, 331.5, 30.0, 30.0 ]
+													"patching_rect" : [ 91.0, 302.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -2427,7 +2426,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 306.0, 331.5, 30.0, 30.0 ]
+													"patching_rect" : [ 316.0, 314.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -2561,7 +2560,7 @@
 
 											}
  ],
-										"toolbaradditions" : [ "BEAP", "Vizzie" ]
+										"toolbaradditions" : [ "BEAP", "Vizzie", "TS.Modular" ]
 									}
 ,
 									"patching_rect" : [ 53.0, 583.49310302734375, 131.0, 22.0 ],
@@ -2673,7 +2672,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-47",
-									"int" : 2,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 3,
@@ -8353,7 +8351,7 @@
 						"toolbaradditions" : [ "BEAP", "Vizzie", "TS.Modular" ]
 					}
 ,
-					"patching_rect" : [ 29.0, 105.0, 641.0, 249.0 ],
+					"patching_rect" : [ 32.0, 64.0, 641.0, 249.0 ],
 					"viewvisibility" : 1
 				}
 
